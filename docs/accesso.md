@@ -5,6 +5,20 @@ nav_order: 3
 
 <button class="btn js-toggle-dark-mode">Passa a modalità scura</button>
 
+<script>
+const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
+
+jtd.addEvent(toggleDarkMode, 'click', function(){
+  if (jtd.getTheme() === 'dark') {
+    jtd.setTheme('light');
+    toggleDarkMode.textContent = 'Passa a modalità scura';
+  } else {
+    jtd.setTheme('dark');
+    toggleDarkMode.textContent = 'Ritorna a modalità chiara';
+  }
+});
+</script>
+
 # L’accesso agli strumenti è regolamentato come di seguito:
 
 1. l’accesso all’uso della strumentazione della piattaforma ECOTRONI/MICROCOSMOP è consentito ai soli soggetti (rappresentanti dei gruppi di ricerca e dei Dipartimenti co-finanziatori) che abbiano seguito il corso di formazione utilizzo Ecotroni (allegato A) o da personale direttamente istruito da loro (borsisti, dottorandi, assegnisti post-doc);
