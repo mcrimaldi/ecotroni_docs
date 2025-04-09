@@ -1,19 +1,22 @@
 ---
 title: Configuration
 nav_order: 2
+nav_exclude: true
 ---
 
 # Configuration
+
 {: .no_toc }
 
 Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
@@ -66,10 +69,11 @@ search:
   # Supports true or false (default)
   button: false
   # Focus the search input by pressing `ctrl + focus_shortcut_key` (or `cmd + focus_shortcut_key` on macOS)
-  focus_shortcut_key: 'k'
+  focus_shortcut_key: "k"
 ```
 
 ## Mermaid Diagrams
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -119,6 +123,7 @@ heading_anchors: true
 ```
 
 ## External navigation links
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -184,6 +189,7 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 See [Customization]({% link docs/customization.md %}) for more information.
 
 ## Callouts
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -205,8 +211,7 @@ This uses the color `$red-000` for the background of the callout, and `$red-300`
 A paragraph...
 ```
 
-[^dark]:
-    If you use the `dark` color scheme, this callout uses `$red-300` for the background, and `$red-000` for the title.
+[^dark]: If you use the `dark` color scheme, this callout uses `$red-300` for the background, and `$red-000` for the title.
 
 The colors `grey-lt`, `grey-dk`, `purple`, `blue`, `green`, `yellow`, and `red` are predefined; to use a custom color, you need to define its `000` and `300` levels in your SCSS files. For example, to use `pink`, add the following to your `_sass/custom/setup.scss` file:
 
@@ -243,6 +248,7 @@ See [Callouts]({% link docs/ui-components/callouts.md %}) for more information.
 ## Google Analytics
 
 {: .warning }
+
 > [Google Analytics 4 will replace Universal Analytics](https://support.google.com/analytics/answer/11583528). On **July 1, 2023**, standard Universal Analytics properties will stop processing new hits. The earlier you migrate, the more historical data and insights you will have in Google Analytics 4.
 
 Universal Analytics (UA) and Google Analytics 4 (GA4) properties are supported.
@@ -255,6 +261,7 @@ ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (t
 ```
 
 ### Multiple IDs
+
 {: .d-inline-block .no_toc }
 
 New (v0.4.0)
@@ -272,6 +279,7 @@ By default, the navigation and search include normal [pages](https://jekyllrb.co
 You can also use [Jekyll collections](https://jekyllrb.com/docs/collections/) which group documents semantically together.
 
 {: .warning }
+
 > Collection folders always start with an underscore (`_`), e.g. `_tests`. You won't see your collections if you omit the prefix.
 
 For example, put all your test files in the `_tests` folder and create the `tests` collection:
@@ -305,11 +313,12 @@ just_the_docs:
 The navigation for all your normal pages (if any) is displayed before those in collections.
 
 <span>New (v0.4.0)</span>{: .label .label-green }
-Including `nav_fold: true` in a collection configuration *folds* that collection:
+Including `nav_fold: true` in a collection configuration _folds_ that collection:
 an expander symbol appears next to the collection name,
 and clicking it displays/hides the links to the top-level pages of the collection.[^js-disabled]
 
-[^js-disabled]: <span>New (v0.6.0)</span>{: .label .label-green }
+[^js-disabled]:
+    <span>New (v0.6.0)</span>{: .label .label-green }
     When JavaScript is disabled in the browser, all folded collections are automatically expanded,
     since clicking expander symbols has no effect.
     (In previous releases, navigation into folded collections required JavaScript to be enabled.)
@@ -334,6 +343,6 @@ just_the_docs:
       name: Tutorials
 ```
 
-When *all* your pages are in a single collection, its name is not displayed.
+When _all_ your pages are in a single collection, its name is not displayed.
 
 The navigation for each collection is a separate name space for page titles: a page in one collection cannot be a child of a page in a different collection, or of a normal page.
