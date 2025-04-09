@@ -30,16 +30,16 @@ Scopo del presente regolamento è di permettere un efficiente, sicuro e razional
 
 L’accesso agli strumenti è regolamentato secondo i regolamenti e la documentazione presente in questo sito, raggiungibile tramite barra di navigazione a lato:
 
-<details open markdown="block">
+<!-- <details open markdown="block">
   <summary>
     Table of contents
   </summary>
   {: .text-delta }
 1. TOC
 {:toc}
-</details>
+</details> -->
 
-This is a _bare-minimum_ template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+<!-- This is a _bare-minimum_ template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
 
 If [Jekyll] is installed on your computer, you can also build and preview the created site _locally_. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
 
@@ -68,4 +68,4 @@ If you want to maintain your docs in the `docs` directory of an existing project
 [README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
 [Jekyll]: https://jekyllrb.com
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate -->
