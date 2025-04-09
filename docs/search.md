@@ -1,16 +1,19 @@
 ---
 title: Search
 nav_order: 7
+nav_exclude: true
 ---
 
 # Search
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
@@ -103,7 +106,7 @@ For example,
 
 ```yaml
 search:
-    focus_shortcut_key: 'k'
+  focus_shortcut_key: "k"
 ```
 
 Will make <kbd>Ctrl</kbd> + <kbd>K</kbd> focus the search bar for Windows users (and <kbd>Command</kbd> + <kbd>K</kbd> on macOS).
@@ -122,7 +125,6 @@ title: Page not found
 nav_exclude: true
 search_exclude: true
 ---
-
 ```
 
 ## Generate search index when used as a gem
@@ -139,6 +141,7 @@ This command creates the `assets/js/zzzz-search-data.json` file that Jekyll uses
 Alternatively, you can create the file manually with [this content]({{ site.github.repository_url }}/blob/main/assets/js/zzzz-search-data.json).
 
 ## Custom content for search index
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -147,9 +150,10 @@ New (v0.4.0)
 Advanced
 {: .label .label-yellow }
 
-By default, the search feature indexes a page's `.content`, `.title`, and *some* headers within the `.content`. Other data (e.g. front matter, files in `_data` and `assets`) is not indexed. Users can customize what is indexed.
+By default, the search feature indexes a page's `.content`, `.title`, and _some_ headers within the `.content`. Other data (e.g. front matter, files in `_data` and `assets`) is not indexed. Users can customize what is indexed.
 
 {: .warning }
+
 > Customizing search indices is an advanced feature that requires Javascript and Liquid knowledge.
 
 1. When Just the Docs is a local or gem theme, ensure `assets/js/zzzz-search-data.json` is up-to-date with [Generate search index when used as a gem](#generate-search-index-when-used-as-a-gem).
@@ -157,6 +161,7 @@ By default, the search feature indexes a page's `.content`, `.title`, and *some*
 3. Add a new file named `_includes/lunr/custom-index.js`. Insert custom Javascript code that reads your custom Javascript fields and inserts them into the search index. You may want to inspect `assets/js/just-the-docs.js` to better understand the code.
 
 ### Example: adding custom `usage` and `examples` fields
+
 {: .text-delta }
 
 This example adds front matter `usage` and `examples` fields to the search index.
@@ -164,17 +169,19 @@ This example adds front matter `usage` and `examples` fields to the search index
 `_includes/lunr/custom-data.json` custom code reads the page `usage` and `examples` fields, normalizes the text, and writes the text to custom Javascript `myusage` and `myexamples` fields. Javascript fields are similar yet [not the same as JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON#javascript_and_json_differences). `jsonify` will probably work for most scenarios.
 
 {% raw %}
+
 ```liquid
 {%- capture newline %}
 {% endcapture -%}
 "myusage": {{ include.page.usage | markdownify | replace:newline,' ' | strip_html | normalize_whitespace | strip | jsonify }},
 "myexamples": {{ include.page.examples | markdownify | replace:newline,' ' | strip_html | normalize_whitespace | strip | jsonify }},
 ```
+
 {% endraw %}
 
 `_includes/lunr/custom-index.js` custom code is inserted into the Javascript loop of `assets/js/just-the-docs.js`. All custom Javascript fields are accessed as fields of `docs[i]` such as `docs[i].myusage`. Finally, append your custom fields on to the already existing `docs[i].content`.
 
 ```javascript
 const content_to_merge = [docs[i].content, docs[i].myusage, docs[i].myexamples];
-docs[i].content = content_to_merge.join(' ');
+docs[i].content = content_to_merge.join(" ");
 ```

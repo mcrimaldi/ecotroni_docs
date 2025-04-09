@@ -1,6 +1,7 @@
 ---
 title: Markdown kitchen sink
 nav_order: 99
+nav_exclude: true
 ---
 
 <button class="btn js-toggle-dark-mode">Preview dark color scheme</button>
@@ -42,9 +43,9 @@ This is a normal paragraph following a header. GitHub is a code hosting platform
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
+  dateformat.i18n = require("./lang/" + l);
   return true;
-}
+};
 ```
 
 ```ruby
@@ -56,9 +57,9 @@ end
 
 #### Header 4 `with code not transformed`
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
+- This is an unordered list following a header.
+- This is an unordered list following a header.
+- This is an unordered list following a header.
 
 ##### Header 5
 
@@ -75,7 +76,7 @@ even when it comes at the beginning](.) of the line.
   when used first in an item ](.) in a list.
 
 | head1        | head two          | three |
-|:-------------|:------------------|:------|
+| :----------- | :---------------- | :---- |
 | ok           | good swedish fish | nice  |
 | out of stock | good and plenty   | nice  |
 | ok           | good `oreos`      | hmm   |
@@ -83,14 +84,14 @@ even when it comes at the beginning](.) of the line.
 
 ### There's a horizontal rule below this.
 
-* * *
+---
 
 ### Here is an unordered list:
 
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
+- Item foo
+- Item bar
+- Item baz
+- Item zip
 
 ### And an ordered list:
 
@@ -107,12 +108,14 @@ even when it comes at the beginning](.) of the line.
 Some text
 
 {:style="counter-reset:none"}
+
 1.  Item three
 1.  Item four
 
 ### And an ordered list starting from 42:
 
 {:style="counter-reset:step-counter 41"}
+
 1.  Item 42
 1.  Item 43
 1.  Item 44
@@ -138,17 +141,17 @@ Some text
 - level 1 item (ul)
   1. level 2 item (ol)
   1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
+  - level 3 item (ul)
+  - level 3 item (ul)
 - level 1 item (ul)
   1. level 2 item (ol)
   1. level 2 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
+  - level 3 item (ul)
+  - level 3 item (ul)
   1. level 4 item (ol)
   1. level 4 item (ol)
-    - level 3 item (ul)
-    - level 3 item (ul)
+  - level 3 item (ul)
+  - level 3 item (ul)
 - level 1 item (ul)
 
 ### And a task list
@@ -160,24 +163,24 @@ Some text
 ### Nesting task lists
 
 - [ ] level 1 item (task)
-   - [ ] level 2 item (task)
-   - [ ] level 2 item (task)
+  - [ ] level 2 item (task)
+  - [ ] level 2 item (task)
 - [ ] level 1 item (task)
 - [ ] level 1 item (task)
 
 ### Nesting a ul in a task list
 
 - [ ] level 1 item (task)
-   - level 2 item (ul)
-   - level 2 item (ul)
+  - level 2 item (ul)
+  - level 2 item (ul)
 - [ ] level 1 item (task)
 - [ ] level 1 item (task)
 
 ### Nesting a task list in a ul
 
 - level 1 item (ul)
-   - [ ] level 2 item (task)
-   - [ ] level 2 item (task)
+  - [ ] level 2 item (task)
+  - [ ] level 2 item (task)
 - level 1 item (ul)
 - level 1 item (ul)
 
@@ -209,9 +212,9 @@ red
 
 **bold**
 {: .label }
-*italic*
+_italic_
 {: .label }
-***bold + italic***
+**_bold + italic_**
 {: .label }
 
 ### Definition lists can be used with HTML syntax.
@@ -234,31 +237,31 @@ Term
 
 Longer Term
 : Longer description of Term,
-  possibly more than one line
+possibly more than one line
 
 Term
 : First description of Term,
-  possibly more than one line
+possibly more than one line
 
 : Second description of Term,
-  possibly more than one line
+possibly more than one line
 
 Term1
 Term2
 : Single description of Term1 and Term2,
-  possibly more than one line
+possibly more than one line
 
 Term1
 Term2
 : First description of Term1 and Term2,
-  possibly more than one line
+possibly more than one line
 
 : Second description of Term1 and Term2,
-  possibly more than one line
+possibly more than one line
 
 ### More code
 
-```python{% raw %}
+````python{% raw %}
 def dump_args(func):
     "This decorator dumps out the arguments passed to a function before calling it"
     argnames = func.func_code.co_varnames[:func.func_code.co_argcount]
@@ -293,9 +296,11 @@ class conditions(object):
         self.__postcondition = post
 {% endraw %}```
 
-```
+````
+
 Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
+
+````
 
 ### Mermaid Diagrams
 
@@ -309,7 +314,7 @@ graph TD;
     A-->C;
     B-->D;
     C-->D;
-```
+````
 
 ### Collapsed Section
 

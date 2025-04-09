@@ -1,7 +1,9 @@
 ---
 title: Y
 parent: Ancestry
+nav_exclude: true
 ---
+
 # Y
 
 ```yaml

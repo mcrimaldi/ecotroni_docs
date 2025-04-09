@@ -3,6 +3,7 @@ title: Minimal layout child page
 layout: minimal
 parent: A minimal layout page
 grand_parent: Layout
+nav_exclude: true
 ---
 
 # Minimal layout child page

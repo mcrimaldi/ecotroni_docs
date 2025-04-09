@@ -1,6 +1,7 @@
 ---
 title: Line Numbers
 parent: Code
+nav_exclude: true
 ---
 
 # Code Snippets with Line Numbers
@@ -17,8 +18,8 @@ can be turned off by using the following configuration option:
 
 {% highlight yaml %}
 compress_html:
-  ignore:
-    envs: all
+ignore:
+envs: all
 {% endhighlight %}
 
 When using Kramdown code fences, line numbers are turned on globally by the
@@ -26,9 +27,9 @@ following configuration option:
 
 {% highlight yaml %}
 kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
+syntax_highlighter_opts:
+block:
+line_numbers: true
 {% endhighlight %}
 
 Line numbers can then be suppressed locally using Liquid tags (_without_ the

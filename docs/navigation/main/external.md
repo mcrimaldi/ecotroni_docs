@@ -2,6 +2,7 @@
 title: External Links
 parent: Main Navigation
 nav_order: 6
+nav_exclude: true
 ---
 
 # External Links
@@ -10,6 +11,7 @@ To add external links to the navigation, add them to the `nav_external_links` [c
 External links will appear in the navigation after the links to ordinary pages, but before any collections.
 
 ## Example: external links
+
 {: .text-delta }
 
 ```yaml

@@ -2,6 +2,7 @@
 title: Labels
 parent: UI Components
 nav_order: 3
+nav_exclude: true
 ---
 
 # Labels
@@ -26,6 +27,7 @@ Coming soon
 
 Deprecated
 {: .label .label-red }
+
 </div>
 ```markdown
 Default label
@@ -45,4 +47,7 @@ Coming soon
 
 Deprecated
 {: .label .label-red }
+
+```
+
 ```

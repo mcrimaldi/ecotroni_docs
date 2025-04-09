@@ -2,38 +2,41 @@
 title: In-Page Navigation
 parent: Navigation
 nav_order: 5
+nav_exclude: true
 ---
 
 # In-Page Navigation
+
 {: .no_toc }
 
 ## Table of Contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
-To support in-page navigation, you can generate a *Table of Contents* (TOC) with links to headings, like the one shown above, as well as a link to the top of the page.
+To support in-page navigation, you can generate a _Table of Contents_ (TOC) with links to headings, like the one shown above, as well as a link to the top of the page.
 
 ## Generating Table of Contents
 
-To generate a *Table of Contents* in a page, you use Kramdown's `{:toc}` method, immediately after the start of a list. This will automatically generate a list of anchor links to various sections of the page, based on headings and heading levels.
+To generate a _Table of Contents_ in a page, you use Kramdown's `{:toc}` method, immediately after the start of a list. This will automatically generate a list of anchor links to various sections of the page, based on headings and heading levels.
 
 {: .note }
 `{:toc}` can be used only once on each page.
 
 You **must** have a list immediately preceding the table of contents. The type of list determines the style of your table of contents.
 
-For an *ordered* table of contents, use the following markdown code:
+For an _ordered_ table of contents, use the following markdown code:
 
 ```md
 1. TOC
-{:toc}
+   {:toc}
 ```
 
-The `{:toc}` line *must* follow the `1. TOC` line, which begins a list.
+The `{:toc}` line _must_ follow the `1. TOC` line, which begins a list.
 
-For an *unordered* table of contents, instead use the following markdown code:
+For an _unordered_ table of contents, instead use the following markdown code:
 
 ```
 - TOC
@@ -46,16 +49,18 @@ If you want to omit a particular heading from the TOC, follow it immediately by 
 
 ```markdown
 # In-Page Navigation
+
 {: .no_toc }
 
 ## Table of Contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 ```
 
-This example omits the top-level heading (`In-Page Navigation`) from the TOC, as well as the heading for the *Table of Contents* itself.
+This example omits the top-level heading (`In-Page Navigation`) from the TOC, as well as the heading for the _Table of Contents_ itself.
 
 ## Collapsible Table of Contents (with `<details>` and `<summary>`)
 
@@ -85,6 +90,7 @@ the current page uses `## Back to Top {#back-to-top-doc}`.
 You can add a link from the bottom of each page to its top. You do this by including the `back_to_top` configuration option in your site's `_config.yml` file, together with `back_to_top_text` for the anchor link.
 
 ### Example
+
 {: .no_toc }
 
 ```yaml
@@ -93,4 +99,4 @@ back_to_top_text: "Back to top"
 ```
 
 {: .warning }
-Back-to-top links currently appear only when *other* configuration options require footer generation!
+Back-to-top links currently appear only when _other_ configuration options require footer generation!

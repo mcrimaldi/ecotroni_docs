@@ -2,16 +2,19 @@
 title: Code
 parent: UI Components
 nav_order: 6
+nav_exclude: true
 ---
 
 # Code
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
@@ -23,13 +26,16 @@ Code can be rendered inline by wrapping it in single back ticks.
 Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ## Heading with `<inline code snippet>` in it.
+
 {: .no_toc }
+
 </div>
 ```markdown
 Lorem ipsum dolor sit amet, `<inline code snippet>` adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ## Heading with `<inline code snippet>` in it.
-```
+
+````
 
 ---
 
@@ -44,7 +50,8 @@ var fun = function lang(l) {
   dateformat.i18n = require('./lang/' + l)
   return true;
 }
-```
+````
+
 </div>
 {% highlight markdown %}
 ```js
@@ -90,6 +97,7 @@ To demonstrate front end code, sometimes it's useful to show a rendered example 
 ---
 
 ## Mermaid diagram code blocks
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -110,7 +118,8 @@ Additional configuration options are loaded through `_includes/mermaid_config.js
 
 ```js
 // _includes/mermaid_config.js
-{}
+{
+}
 ```
 
 This loads the default settings.
@@ -120,13 +129,14 @@ The contents of this object should follow [mermaid's configuration API](https://
 ```js
 // _includes/mermaid_config.js
 {
-  theme: "forest"
+  theme: "forest";
 }
 ```
 
 Once mermaid is installed, it can be used in markdown files. The markdown for a simple flowchart example might look like the following:
 
 {% highlight markdown %}
+
 ```mermaid
 graph TD;
     accTitle: the diamond pattern
@@ -136,6 +146,7 @@ graph TD;
     B-->D;
     C-->D;
 ```
+
 {% endhighlight %}
 
 which renders:
@@ -150,7 +161,7 @@ graph TD;
     C-->D;
 ```
 
-*Note: for demonstration purposes, we've enabled mermaid on this site. It is still disabled by default, and users need to opt-in to use it.*
+_Note: for demonstration purposes, we've enabled mermaid on this site. It is still disabled by default, and users need to opt-in to use it._
 
 ### Using a local mermaid library
 
@@ -170,7 +181,7 @@ mermaid:
 For mermaid versions `>=10`, this file is imported directly as an ESM module (rather than as a plain `<script>` tag); users should use the `mermaid.esm.min.mjs` file. In contrast, for mermaid versions `<10`, this file is loaded as a script tag; it should be a standalone CJS file (i.e. `mermaid.min.js`).
 
 {: .warning }
-Mermaid versions `10.0` - `10.1` (and possibly, future releases) still encode relative imports in `mermaid.esm.min.mjs`. Local users must copy *all* of the contents of the `dist` folder to the specified path (preserving the relative location of the files). Just the Docs is actively monitoring mermaid releases; an upstream fix is planned.
+Mermaid versions `10.0` - `10.1` (and possibly, future releases) still encode relative imports in `mermaid.esm.min.mjs`. Local users must copy _all_ of the contents of the `dist` folder to the specified path (preserving the relative location of the files). Just the Docs is actively monitoring mermaid releases; an upstream fix is planned.
 
 ### Using mermaid with AsciiDoc
 
@@ -179,6 +190,7 @@ Users of [AsciiDoc](https://asciidoc.org/) (e.g. via [jekyll-asciidoc](https://g
 By default, AsciiDoc generates HTML markup that mermaid cannot properly parse. The simplest way to resolve this is to use a [passthrough block](https://docs.asciidoctor.org/asciidoc/latest/pass/pass-block/):
 {% highlight asciidoc %}
 ++++
+
 <pre class="language-mermaid">
 graph TD;
     accTitle: the diamond pattern
@@ -188,6 +200,7 @@ graph TD;
     B-->D;
     C-->D;
 </pre>
+
 ++++
 {% endhighlight %}
 
@@ -196,6 +209,7 @@ Alternatively, community member [@flyx](https://github.com/flyx) has contributed
 The [asciidoctor-diagram](https://docs.asciidoctor.org/diagram-extension/latest/) extension which also supports mermaid is not recommended for use with Just the Docs, since it requires separate configuration e.g. for theming, and is known to not be trivial to set up.
 
 ## Copy button
+
 {: .d-inline-block }
 
 New (v0.4.0)

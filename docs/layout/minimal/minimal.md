@@ -2,6 +2,7 @@
 title: A minimal layout page
 layout: minimal
 parent: Layout
+nav_exclude: true
 ---
 
 # A minimal layout page

@@ -2,16 +2,19 @@
 title: Buttons
 parent: UI Components
 nav_order: 2
+nav_exclude: true
 ---
 
 # Buttons
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
@@ -27,6 +30,7 @@ nav_order: 2
 [Link button](https://just-the-docs.com){: .btn .btn-green }
 
 [Link button](https://just-the-docs.com){: .btn .btn-outline }
+
 </div>
 ```markdown
 [Link button](https://just-the-docs.com){: .btn }
@@ -36,7 +40,8 @@ nav_order: 2
 [Link button](https://just-the-docs.com){: .btn .btn-green }
 
 [Link button](https://just-the-docs.com){: .btn .btn-outline }
-```
+
+````
 
 ### Button element
 
@@ -47,7 +52,7 @@ GitHub Flavored Markdown does not support the `button` element, so you'll have t
 </div>
 ```html
 <button type="button" name="button" class="btn">Button element</button>
-```
+````
 
 ---
 
@@ -86,6 +91,7 @@ Use the [margin utility classes]({% link docs/utilities/layout.md %}#spacing) to
 
 [Button with more space](https://just-the-docs.com){: .btn .btn-green .mr-4 }
 [Button](https://just-the-docs.com){: .btn .btn-blue }
+
 </div>
 ```markdown
 [Button with space](https://just-the-docs.com){: .btn .btn-purple .mr-2 }
@@ -93,4 +99,7 @@ Use the [margin utility classes]({% link docs/utilities/layout.md %}#spacing) to
 
 [Button with more space](https://just-the-docs.com){: .btn .btn-green .mr-4 }
 [Button](https://just-the-docs.com){: .btn .btn-blue }
+
+```
+
 ```

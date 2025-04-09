@@ -1,16 +1,19 @@
 ---
 title: Customization
 nav_order: 6
+nav_exclude: true
 ---
 
 # Customization
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
@@ -21,6 +24,7 @@ Just the Docs supports two color schemes: light (default), and dark.
 To enable a color scheme, set the `color_scheme` parameter in your site's `_config.yml` file:
 
 ### Example: preview dark color scheme
+
 {: .no_toc .text-delta }
 
 ```yaml
@@ -45,11 +49,11 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 </script>
 
 ### deprecated: `legacy_light`
+
 {: .d-inline-block .no_toc }
 
 New (v0.4.2)
 {: .label .label-green }
-
 
 In Just the Docs version `0.4.2`, we changed the default syntax highlighting theme for the `light` color scheme to have higher contrast. Users who want to use the old highlighting need to explicitly opt-in with the deprecated `legacy_light` color scheme. In a future major release of Just the Docs, we will remove this color scheme.
 
@@ -77,6 +81,7 @@ Available variables are listed in the [\_variables.scss](https://github.com/just
 For example, to change the link color from the purple default to blue, include the following inside your scheme file:
 
 #### Example: custom link color
+
 {: .no_toc .text-delta }
 
 ```scss
@@ -104,24 +109,25 @@ If you want to be able to change the scheme dynamically, for example via javascr
 with the following content:
 
 {% raw %}
-    ---
-    ---
-    {% include css/just-the-docs.scss.liquid color_scheme="foo" %}
+---
+---
+{% include css/just-the-docs.scss.liquid color_scheme="foo" %}
 {% endraw %}
 
 This allows you to switch the scheme via the following javascript.
 
 ```js
-jtd.setTheme("foo")
+jtd.setTheme("foo");
 ```
 
 ## Override and define new variables
+
 {: .d-inline-block }
 
 New (v0.4.0)
 {: .label .label-green }
 
-To define new SCSS variables or functions, place SCSS code in `_sass/custom/setup.scss`. This should *not* be used for defining custom styles (see the next section) or overriding color scheme variables (in this case, you should create a new color scheme).
+To define new SCSS variables or functions, place SCSS code in `_sass/custom/setup.scss`. This should _not_ be used for defining custom styles (see the next section) or overriding color scheme variables (in this case, you should create a new color scheme).
 
 This is most commonly-used to define [custom callout colors]({% link docs/configuration.md %}#callouts). For example,
 
@@ -133,7 +139,7 @@ $pink-200: #e94ee1;
 $pink-300: #dd2cd4;
 ```
 
-In particular: this file is imported *after* the theme's variables and functions are defined, but *before* any CSS classes are emitted.
+In particular: this file is imported _after_ the theme's variables and functions are defined, but _before_ any CSS classes are emitted.
 
 ## Override and completely custom styles
 
@@ -143,6 +149,7 @@ To do this, put your styles in the file `_sass/custom/custom.scss`.
 This will allow for all overrides to be kept in a single file, and for any upstream changes to still be applied.
 
 ### Example: custom print styles
+
 {: .no_toc .text-delta }
 
 For example, if you'd like to add your own styles for printing a page, you could add the following styles.
@@ -170,6 +177,7 @@ To do this, create an `_includes` directory and make a copy of the specific file
 Just the Docs provides the following custom includes files:
 
 ### Custom TOC Heading
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -180,9 +188,11 @@ New (v0.4.0)
 If the page has any child pages, and `has_toc` is not set to `false`, this content appears as a heading above the [auto-generating list of child pages]({% link docs/navigation/children.md %}) after the page's content.
 
 #### Example: changing TOC heading
+
 {: .no_toc }
 
 To change the default TOC heading to "Contents", create `_includes/toc_heading_custom.html` and add:
+
 ```html
 <h2 class="text-delta">Contents</h2>
 ```
@@ -210,6 +220,7 @@ The `<head>` tag automatically includes a link to an existing favicon if you set
 Content added to this file appears at the top of every page's main content between the site search and auxiliary links if they are enabled. If `search_enabled` were set to false and `aux_links` were removed, the content of `header_custom.html` would occupy the space at the top of every page.
 
 ### Custom Nav Footer
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -220,6 +231,7 @@ New (v0.4.0)
 Any content added to this file will appear at the bottom left of the page below the site's navigation. By default an attribution to Just the Docs is displayed which reads, `This site uses Just the Docs, a documentation theme for Jekyll.`.
 
 ### Custom Search Placeholder
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -250,6 +262,7 @@ Chercher notre site
 would make the placeholder text "Chercher notre site". [Liquid code](https://jekyllrb.com/docs/liquid/) (including [Jekyll variables](https://jekyllrb.com/docs/variables/)) is also supported.
 
 ## Custom layouts and includes
+
 {: .d-inline-block }
 
 New (v0.4.0)
@@ -304,6 +317,7 @@ Here is a simplified code example of what it looks like:
 {% endraw %}
 
 #### Component summary
+
 {: .no_toc }
 
 {: .warning }

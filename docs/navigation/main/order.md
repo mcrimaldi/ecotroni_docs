@@ -2,6 +2,7 @@
 title: Ordering Pages
 parent: Main Navigation
 nav_order: 1
+nav_exclude: true
 ---
 
 # Ordering Pages
@@ -9,6 +10,7 @@ nav_order: 1
 To specify a page order, you can use the `nav_order` parameter in the front matter of the pages.
 
 ## Example: using `nav_order`
+
 {: .text-delta }
 
 ```yaml
@@ -29,8 +31,7 @@ By default, all Capital letters come before all lowercase letters; you can add `
 
 Enclosing strings in quotation marks in front matter is optional, unless they contain "`[`", "`]`", "`{`", "`}`", "`,`", "`: `", or "` #`". Boolean, integer, and float values are treated as strings when enclosed in quotation marks.
 
-----
+---
 
-[^floats]: Jekyll treats each integer *N* as equal to the corresponding float *N.0*.
-
-[^case-insensitive]: *Note for users of previous versions of Just the Docs:* The option `nav_sort: case_insensitive` previously affected the ordering of numerical `nav_order` parameters: e.g., `10` came before `2`. Also, all pages with explicit `nav_order` parameters previously came before all pages with default parameters. Both were potentially confusing, and they have now been eliminated.
+[^floats]: Jekyll treats each integer _N_ as equal to the corresponding float _N.0_.
+[^case-insensitive]: _Note for users of previous versions of Just the Docs:_ The option `nav_sort: case_insensitive` previously affected the ordering of numerical `nav_order` parameters: e.g., `10` came before `2`. Also, all pages with explicit `nav_order` parameters previously came before all pages with default parameters. Both were potentially confusing, and they have now been eliminated.

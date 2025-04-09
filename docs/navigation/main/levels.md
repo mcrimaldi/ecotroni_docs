@@ -2,6 +2,7 @@
 title: Page Levels
 parent: Main Navigation
 nav_order: 3
+nav_exclude: true
 ---
 
 # Page Levels
@@ -9,6 +10,7 @@ nav_order: 3
 Sometimes you will want to create a page with many children. First, it is recommended that you store related pages together in a directory. For example, in these docs, we keep all of the written documentation pages in the `./docs` directory, and each of the sections in subdirectories like `./docs/ui-components` and `./docs/utilities`. This gives us an organization like this:
 
 {: .lh-0 }
+
 ```
 ┌─ ...
 ├─ (Jekyll files)
@@ -32,6 +34,7 @@ Sometimes you will want to create a page with many children. First, it is recomm
 ```
 
 ## Example: page with no parents
+
 {: .text-delta }
 
 ```yaml
@@ -50,6 +53,7 @@ The navigation links for all pages with children come with an expander. When you
 On child pages, simply set the `parent` front matter to the parent page's `title`, and set a navigation order (relative to pages having the same parent).
 
 ### Example: creating a child page
+
 {: .text-delta }
 
 ```yaml
@@ -63,6 +67,7 @@ nav_order: 2
 The Buttons page appears as a child of UI Components and appears second in the UI Components pages.
 
 {: .new-title }
+
 > New (v0.10.0)
 >
 > The `has_children` field is now redundant (and ignored, except when significant for backwards compatibility).
@@ -72,6 +77,7 @@ The Buttons page appears as a child of UI Components and appears second in the U
 Child pages can themselves have children, to any number of levels.
 
 ### Example: pages with (recursive) children
+
 {: .text-delta }
 
 ```yaml
@@ -107,6 +113,7 @@ parent: Ancestry
 This creates the following navigation structure:
 
 {: .lh-0 }
+
 ```
 ┌─ ...
 ├─ ...

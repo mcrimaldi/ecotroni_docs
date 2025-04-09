@@ -2,7 +2,9 @@
 title: T
 parent: S
 grand_parent: X
+nav_exclude: true
 ---
+
 # T
 
 ```yaml

@@ -2,6 +2,7 @@
 title: Child Pages
 parent: Navigation
 nav_order: 4
+nav_exclude: true
 ---
 
 # Child Pages
@@ -11,6 +12,7 @@ By default, all parent pages will automatically have a so-called 'Table of Conte
 To disable this automatic list, set `has_toc: false` in the parent page's front matter.
 
 ## Example: disabling table of contents
+
 {: .text-delta }
 
 ```yaml

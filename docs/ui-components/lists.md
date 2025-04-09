@@ -2,16 +2,19 @@
 title: Lists
 parent: UI Components
 nav_order: 5
+nav_exclude: true
 ---
 
 # Lists
+
 {: .no_toc }
 
 ## Table of contents
+
 {: .no_toc .text-delta }
 
 1. TOC
-{:toc}
+   {:toc}
 
 ---
 
@@ -26,10 +29,11 @@ Most lists can be rendered with pure Markdown.
 
 _or_
 
-* Item 1
-* Item 2
-* Item 3
+- Item 1
+- Item 2
+- Item 3
 </div>
+
 ```markdown
 - Item 1
 - Item 2
@@ -37,9 +41,9 @@ _or_
 
 _or_
 
-* Item 1
-* Item 2
-* Item 3
+- Item 1
+- Item 2
+- Item 3
 ```
 
 ## Ordered list

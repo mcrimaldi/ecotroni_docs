@@ -1,7 +1,9 @@
 ---
 title: S
 parent: Y
+nav_exclude: true
 ---
+
 # S
 
 ```yaml
