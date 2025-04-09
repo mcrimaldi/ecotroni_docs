@@ -26,6 +26,16 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 
 ---
 
+Scopo del presente regolamento è di permettere un efficiente, sicuro e razionale utilizzo della strumentazione della piattaforma ECOTRONI/MICROCOSCMO da parte del personale del Dipartimento di Agraria e di quello degli utilizzatori accessori quali altri Dipartimenti dello stesso Ateneo e utilizzatori esterni (terzi).
+
+Gli organi di gestione della piattaforma ECOTRONI/MICROCOSMO vengono di seguito elencati:
+
+1. Commissione Tecnica, costituita da personale del Dipartimento di Agraria. Risultano inoltre membri della commissione tecnica: il Direttore del Dipartimento, il responsabile scientifico e il responsabile tecnico della stessa piattaforma. La commissione tecnica è costituita dai professori: .....;
+2. Il responsabile scientifico (prof. Matteo Montagna);
+3. Il responsabile tecnico (Ing. Mariano Crimaldi).
+
+L’accesso agli strumenti è regolamentato secondo i regolamenti e la documentazione presente in questo sito, raggiungibile tramite barra di navigazione a lato:
+
 This is a _bare-minimum_ template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
 
 If [Jekyll] is installed on your computer, you can also build and preview the created site _locally_. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
