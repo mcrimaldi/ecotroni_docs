@@ -9,6 +9,7 @@
 
 title: Laboratorio Ecotroni - Regolamento d'uso e Documentazione
 description: Regolamento d'uso e documentazione del Laboratorio Ecotroni del Dipartimento di Agraria Università degli Sutdi di Napoli Federico II
+theme: just-the-docs
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://just-the-docs.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 repository: just-the-docs/just-the-docs # for github-metadata
