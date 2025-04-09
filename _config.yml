@@ -10,7 +10,7 @@
 title: Laboratorio Ecotroni - Regolamento d'uso e Documentazione
 description: Regolamento d'uso e documentazione del Laboratorio Ecotroni del Dipartimento di Agraria Università degli Sutdi di Napoli Federico II
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ecotronilab.netlify.app" # the base hostname & protocol for your site, e.g. http://example.com
 repository: mcrimaldi/ecotroni_docs # for github-metadata
 
 permalink: pretty
