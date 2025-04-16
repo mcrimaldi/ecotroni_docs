@@ -25,10 +25,8 @@ jtd.addEvent(toggleDarkMode, 'click', function(){
 ## Per prenotare l'utilizzo degli ecotroni mandare una email di richiesta al responsabile tecnico
 
 <div id='calendar-container'>
-  <p>Caricamento calendario...</p> {# Messaggio temporaneo #}
+  <p>Caricamento calendario...</p>
 </div>
-
-{# Includiamo i dati degli eventi per JavaScript qui sotto #}
 
 <script>
   const jekyllEvents = {{ site.data.events | jsonify }};
