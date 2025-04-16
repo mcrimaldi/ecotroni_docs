@@ -1,0 +1,16 @@
+- title: Riunione Progetto Alpha
+  start: 2025-04-17T10:00:00
+  end: 2025-04-17T11:30:00
+  description: Discussione avanzamento task.
+  # Puoi aggiungere altri campi: location, color, etc.
+
+- title: Workshop CSS Avanzato
+  start: 2025-04-18T14:00:00
+  end: 2025-04-18T17:00:00
+
+- title: Appuntamento Dentista
+  start: 2025-04-19T09:00:00
+  # Se non c'è 'end', alcune librerie lo considerano di durata predefinita o all-day
+
+- title: Evento Tutto il Giorno
+  start: 2025-04-20 # Senza orario, spesso interpretato come all-day
