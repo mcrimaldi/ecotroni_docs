@@ -1,6 +1,7 @@
 ---
 title: Calendario e prenotazioni piattaforme
 layout: default
+nav_exclude: true
 nav_order: 100
 ---
 
