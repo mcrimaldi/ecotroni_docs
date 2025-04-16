@@ -1,6 +1,6 @@
 ---
 title: Calendario e prenotazioni piattaforme
-layout: calendar
+layout: default
 nav_order: 100
 ---
 
