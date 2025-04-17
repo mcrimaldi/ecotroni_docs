@@ -139,3 +139,8 @@ compress_html:
   startings: []
   blanklines: false
   profile: false
+
+collections:
+  events:
+    output: false # non generare singole pagine HTML per ogni evento
+future: true # mostra eventi futuri

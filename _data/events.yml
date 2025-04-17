@@ -1,18 +1,28 @@
 - title: Meeting Team
-  start: 2023-12-05T10:30:00
-  end: 2023-12-05T12:00:00
+  start: 2025-04-17T10:30:00
+  end: 2025-04-17T12:00:00
   description: Discussione progressi settimanali.
   color: "#3788d8" # Blu (opzionale)
 
 - title: Pranzo Lavoro
-  start: 2023-12-07T13:00:00
+  start: 2025-04-18T13:00:00
 
 - title: Deadline Progetto X
-  start: 2023-12-15 # Evento di tutta la giornata
+  start: 2025-04-19 # Evento di tutta la giornata
   allDay: true # Esplicita che è un evento giornaliero
   backgroundColor: "#fcba03" # Giallo (opzionale)
   textColor: "#000000" # Testo nero (opzionale)
 
 - title: Workshop Online
-  start: 2023-12-18T15:00:00
-  end: 2023-12-18T17:30:00
+  start: 2025-04-20T15:00:00
+  end: 2025-04-20T17:30:00
+
+- title: Riunione di Team
+  start: 2025-04-21T15:00:00
+  end: 2025-04-21T17:00:00
+  description: "Discussione sullo stato del progetto"
+
+- title: Conferenza annuale
+  start: 2025-04-15
+  allDay: true
+  description: "Evento di un'intera giornata"
